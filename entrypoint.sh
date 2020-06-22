@@ -6,7 +6,7 @@ echo "::add-matcher::${RUNNER_TEMP}/_github_workflow/problem-matcher.json"
 
 echo "Review Drupal Standards"
 git log -1
-changed_files=$(git diff HEAD^ HEAD --name-only --diff-filter=d --pretty="format:" -- . ":(exclude,glob)html" | grep "\\.install\|\\.module\|\\.inc\|\\.php\|\\.yml");
+changed_files=$(git diff HEAD^ HEAD --name-only --diff-filter=d --pretty="format:" -- . ":(exclude,glob)html" | grep "\\.install\|\\.module\|\\.inc\|\\.php");
 
 if [[ -z "${changed_files}" ]];
     then
