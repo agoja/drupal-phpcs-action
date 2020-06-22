@@ -1,0 +1,9 @@
+name: 'PHP_CodeSniffer for Drupal'
+description: 'PHPCS checker with auto annotations out of the box'
+author: 'Alex Goja'
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
+branding:
+  icon: 'zap'
+  color: 'purple'
