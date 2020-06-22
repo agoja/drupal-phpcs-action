@@ -4,6 +4,6 @@ COPY entrypoint.sh \
      problem-matcher.json \
      /action/
 
-RUN chmod +x /action/entrypoint.sh
+RUN chmod +x entrypoint.sh
 
-ENTRYPOINT ["/action/entrypoint.sh"]
+ENTRYPOINT ["entrypoint.sh"]
